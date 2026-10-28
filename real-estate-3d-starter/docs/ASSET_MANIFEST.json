@@ -1,0 +1,42 @@
+{
+  "project": "real-estate-cinematic-3d",
+  "format": "glb",
+  "assets": [
+    {
+      "id": "villa",
+      "path": "/models/villa.glb",
+      "required_for_initial_build": false,
+      "fallback": "ProceduralVilla.tsx",
+      "notes": "Modern villa model. Prefer separate meshes for roof, walls, windows, doors and floors if these need scroll animation."
+    },
+    {
+      "id": "tree",
+      "path": "/models/tree.glb",
+      "required_for_initial_build": false,
+      "fallback": "procedural tree geometry",
+      "notes": "Low-poly trees can be instanced to reduce draw calls."
+    },
+    {
+      "id": "garden_lamp",
+      "path": "/models/garden-lamp.glb",
+      "required_for_initial_build": false,
+      "fallback": "procedural cylinder and emissive material",
+      "notes": "Optional foreground detail."
+    },
+    {
+      "id": "environment_hdr",
+      "path": "/textures/environment.hdr",
+      "required_for_initial_build": false,
+      "fallback": "ambient and directional lights",
+      "notes": "Use only if HDR loader and licensing are handled."
+    }
+  ],
+  "license_tracking": {
+    "required_fields": [
+      "source_url",
+      "license",
+      "attribution_required",
+      "commercial_use_allowed"
+    ]
+  }
+}
